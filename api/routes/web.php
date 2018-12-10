@@ -99,6 +99,12 @@ $api->version('v1', ['prefix' => 'v1'], function($api){
 		$api->get('pruefer/view', 'PrueferController@viewPruefer');
 		$api->post('pruefer/update', 'PrueferController@updatePruefer');
 		$api->post('pruefer/delete', 'PrueferController@deletePruefer');
+		//Reference routes 
+		$api->get('reference/all', 'ReferenceController@allReference');
+		$api->post('reference/add', 'ReferenceController@addReference');
+		$api->get('reference/view', 'ReferenceController@viewReference');
+		$api->post('reference/update', 'ReferenceController@updateReference');
+		$api->post('reference/delete', 'ReferenceController@deleteReference');
 	});
 
 	/**
